@@ -1,9 +1,10 @@
 <template>
-  <List />
+  <h1>Vue</h1>
+  <UserList />
 </template>
 
 <script setup>
-import List from './components/List.vue'
+import UserList from './components/UserList.vue'
 </script>
 
 <style>
