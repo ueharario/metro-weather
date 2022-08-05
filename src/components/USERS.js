@@ -14,4 +14,4 @@ export const USERS = [
         name: '山田三郎',
         gender: '男性'
     }
-]
+];

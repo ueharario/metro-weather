@@ -21,7 +21,11 @@
 <script>
 import USERS from './components/USERS.js'
 export default {
-   users : USERS
+    data () {
+        return {
+            users : USERS
+        }
+    }
 }
 </script>
 
