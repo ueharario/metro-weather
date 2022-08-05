@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>新規作成</h2>
+        <button v-on:click="create">新規作成</button>
         <table border="1">
             <thead>
                 <tr>
@@ -25,7 +25,10 @@ export default {
         return {
             users : USERS
         }
-    }
+    },
+    // const create = () => {
+
+    // }
 }
 </script>
 
