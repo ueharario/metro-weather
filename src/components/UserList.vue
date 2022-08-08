@@ -26,9 +26,11 @@ export default {
             users : USERS
         }
     },
-    // const create = () => {
-
-    // }
+    methods: {
+        create() {
+            this.$router.push('./components/USERForm')
+        }
+    }
 }
 </script>
 
