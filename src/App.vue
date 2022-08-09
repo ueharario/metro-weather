@@ -2,12 +2,13 @@
   <main>
     <div>
       <UserList />
+      <router-view />
     </div>
   </main>
 </template>
 
 <script>
-import UserList from './components/UserList.vue'
+import UserList from './views/UserList.vue'
 export default {
   name: "App",
   components: {

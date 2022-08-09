@@ -1,22 +1,24 @@
-<template>
-    <div>
-        <select v-model="gender">
-            <option disabled="disabled">選択してください</option>
-            <option value="male">男性</option>
-            <option value="female">女性</option>
-        </select>
-        <button>やめる</button>
-        <button>更新</button>
-    </div>
-</template>
+// <template>
+//     <div>
+//         <select v-model="gender">
+//             <option disabled="disabled">選択してください</option>
+//             <option value="male">男性</option>
+//             <option value="female">女性</option>
+//         </select>
+//         <a href="/" role="button">やめる</a>
+//         <button>更新</button>
+//     </div>
+// </template>
 
-<script>
-import UserList from './components/UserList.js'
-export default {
-    UserList
-}
-</script>
+// <script>
+// import UserList from './components/UserList.vue'
+// export default {
+//     components: {
+//         UserList
+//     }
+// }
+// </script>
 
-<style scoped>
+// <style scoped>
 
-</style>
+// </style>
