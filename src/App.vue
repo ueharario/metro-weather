@@ -12,7 +12,7 @@ import UserList from './views/UserList.vue'
 export default {
   name: "App",
   components: {
-    UserList
+    UserList,
   }
 }
 </script>

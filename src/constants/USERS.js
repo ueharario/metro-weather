@@ -1,4 +1,4 @@
-const Users = [
+export const USERS= [
     {
         id: 1,
         name: '山田太郎',
@@ -15,5 +15,3 @@ const Users = [
         gender: '男性'
     }
 ]
-
-export { Users }

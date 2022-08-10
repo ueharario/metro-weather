@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="create">
-            <a class="btn btn-primary" href="./UserForm.vue" role="button">新規作成</a>
+            <a class="btn btn-primary" href="../components/UserForm.vue" role="button">新規作成</a>
         </div>
         <table border="1">
             <thead>
@@ -21,13 +21,15 @@
 </template>
 
 <script>
-import Users from './views/Users.js'
+import UserForm from './components/UserForm.vue'
+import USERS from './constants/USERS.js'
 export default {
     data () {
         return {
-            users: Users
+            users: USERS
         }
-    }
+    },
+    UserForm
 }
 </script>
 

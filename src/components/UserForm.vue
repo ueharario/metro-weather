@@ -13,11 +13,8 @@
 </template>
 
 <script>
-import UserList from './views/UserList.vue'
 export default {
-    props: {
-        UserList
-    }
+
 }
 </script>
 
