@@ -5,7 +5,9 @@
             <option value="male">男性</option>
             <option value="female">女性</option>
         </select>
-        <a href="/" role="button">やめる</a>
+        <div>
+            <a class="btn btn-secondary" href="./UserList.vue" role="button">やめる</a>
+        </div>
         <button>更新</button>
     </div>
 </template>
@@ -13,7 +15,7 @@
 <script>
 import UserList from './views/UserList.vue'
 export default {
-    components: {
+    props: {
         UserList
     }
 }

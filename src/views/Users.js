@@ -1,4 +1,4 @@
-const USERS = [
+const Users = [
     {
         id: 1,
         name: '山田太郎',
@@ -16,4 +16,4 @@ const USERS = [
     }
 ]
 
-export { USERS }
+export { Users }

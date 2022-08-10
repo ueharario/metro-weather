@@ -1,6 +1,8 @@
 <template>
     <div>
-        <a href="/UserForm" role="button">新規作成</a>
+        <div class="create">
+            <a class="btn btn-primary" href="./UserForm.vue" role="button">新規作成</a>
+        </div>
         <table border="1">
             <thead>
                 <tr>
@@ -19,15 +21,12 @@
 </template>
 
 <script>
-import USERS from './views/USERS.js'
+import Users from './views/Users.js'
 export default {
     data () {
         return {
-            users: USERS
+            users: Users
         }
-    },
-    methods: {
-
     }
 }
 </script>

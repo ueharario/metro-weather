@@ -1,12 +1,17 @@
-import UserList from '../views/UserList.vue'
+import { UserList } from './UserList.vue'
+import { UserForm } from './UserForm.vue'
 
 const routes = [{
-    path: '/',
+    path: './UserList.vue',
     name: 'UserList',
     components: UserList
 },
 {
-    path: '/UserForm',
+    path: './UserForm.vue',
     name: 'UserForm',
-    components: () => import('../views/UserForm.vue')
+    components: UserForm
 }]
+
+export {
+    routes
+}
