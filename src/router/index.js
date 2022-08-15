@@ -1,4 +1,4 @@
-import UserList from './UserList.vue'
+import UserList from '../components/UserList.vue'
 
 export const routes = [{
     path: './UserList.vue',

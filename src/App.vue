@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import UserList from './views/UserList.vue'
+import UserList from './components/UserList.vue'
 export default {
   name: "App",
   components: {
