@@ -1,29 +1,26 @@
 <template>
-  <main>
-    <div>
-      <UserList />
-      <router-view />
-    </div>
-  </main>
+  <div id="app">
+    <UserList massage="一覧画面" />>
+  </div>
 </template>
 
 <script>
 import UserList from './components/UserList.vue'
 export default {
-  name: "App",
+  name: 'app',
   components: {
-    UserList,
+    UserList
   }
 }
 </script>
 
 <style scoped>
-main {
-  height: calc(100vh - 152px);
-  padding: 3% 0;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>

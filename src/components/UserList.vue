@@ -1,8 +1,7 @@
 <template>
-    <div>
-        <div class="create">
-            <a class="btn btn-primary" href="" role="button">新規作成</a>
-        </div>
+    <div class="UserList">
+        <h1>{{ massage }}</h1>
+        <a class="btn btn-primary" href="" role="button">新規作成</a>
         <table border="1">
             <thead>
                 <tr>
@@ -21,18 +20,22 @@
 </template>
 
 <script>
-import UserForm from './UserForm.vue'
 import USERS from '../constants/USERS.js'
 export default {
+    name: 'UserList',
     data () {
         return {
             users: USERS
         }
     },
-    UserForm
+    props: {
+        massage: String
+    }
 }
 </script>
 
 <style scoped>
-
+a {
+    color: #42b983;
+}
 </style>
