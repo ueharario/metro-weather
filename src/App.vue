@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <UserList massage="一覧画面" />>
+    <UserList />
   </div>
 </template>
 

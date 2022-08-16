@@ -1,7 +1,6 @@
 <template>
     <div class="UserList">
-        <h1>{{ massage }}</h1>
-        <a class="btn btn-primary" href="" role="button">新規作成</a>
+        <a class="btn btn-primary" href="../components/UserForm.vue" role="button">新規作成</a>
         <table border="1">
             <thead>
                 <tr>
@@ -17,9 +16,11 @@
             </tbody>
         </table>
     </div>
+    <UserForm />
 </template>
 
 <script>
+import UserForm from './components/UserForm.vue'
 import USERS from '../constants/USERS.js'
 export default {
     name: 'UserList',
@@ -28,8 +29,8 @@ export default {
             users: USERS
         }
     },
-    props: {
-        massage: String
+    components: {
+        UserForm
     }
 }
 </script>
