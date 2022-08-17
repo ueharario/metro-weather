@@ -1,6 +1,6 @@
 <template>
     <div class="UserList">
-        <a class="btn btn-primary" href="../components/UserForm.vue" role="button">新規作成</a>
+        <router-link to="/UserForm">新規作成</router-link>
         <table border="1">
             <thead>
                 <tr>
@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import UserForm from './components/UserForm.vue'
+import UserForm from './UserForm.vue'
 import USERS from '../constants/USERS.js'
 export default {
     name: 'UserList',
