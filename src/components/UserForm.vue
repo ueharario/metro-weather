@@ -1,11 +1,11 @@
 <template>
     <div>
         <div>
-            名前:
-            <input v-model="syncedName">
+            <label>名前:</label>
+            <input type="text">
         </div>
         <div>
-            性別:
+            <label>性別:</label>
             <select v-model="selected">
                 <option disabled="disabled">選択してください</option>
                 <option value="male">男性</option>
