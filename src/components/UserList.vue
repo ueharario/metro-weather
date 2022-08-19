@@ -1,8 +1,9 @@
 <template>
-    <div class="container-fluid mt-5">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-md-12">
-                <button @click="click">新規作成</button>
+                <h1>{{ title }}</h1>
+                <button class="btn btn-primary my-2" @click="create">新規作成</button>
                 <UserForm v-if="show" />
                 <table class="table">
                     <thead class="thead-dark">
@@ -32,6 +33,12 @@ export default {
     name: 'UserList',
     data() {
         return {
+            title: 'vue-cli',
+            form: {
+                id: '',
+                name: '',
+                gender: ''
+            },
             users: [],
             show: false
         }
@@ -43,7 +50,7 @@ export default {
         UserForm
     },
     methods: {
-        click() {
+        create() {
             this.show = !this.show
         }
     }
@@ -51,7 +58,5 @@ export default {
 </script>
 
 <style scoped>
-a {
-    color: #42b983;
-}
+
 </style>
