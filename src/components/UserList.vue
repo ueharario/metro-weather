@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1>{{ title }}</h1>
-                <button class="btn btn-primary my-2" @click="create">新規作成</button>
+                <button class="btn btn-primary my-2" @click="create()">新規作成</button>
                 <UserForm v-if="show" />
                 <table class="table">
                     <thead class="thead-dark">

@@ -1,15 +1,18 @@
 <template>
   <div id="app">
     <UserList/>
+    <UserForm v-if="show" />
   </div>
 </template>
 
 <script>
 import UserList from './components/UserList.vue'
+import UserForm from './components/UserForm.vue'
 export default {
   name: 'app',
   components: {
-    UserList
+    UserList,
+    UserForm
   }
 }
 </script>
